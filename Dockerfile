@@ -25,4 +25,4 @@ RUN npm install -g gulp && npm install
 RUN gulp
 
 EXPOSE 8000
-CMD ["gunicorn", "mongorun:app", "-b 0.0.0.0:8000"]
+CMD ["gunicorn", "mongorun:app", "-b 0.0.0.0:8000", "-w 2"]

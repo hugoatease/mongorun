@@ -4,6 +4,7 @@ var Router = require('react-router').Router;
 var Route = require('react-router').Route;
 var IndexRoute = require('react-router').IndexRoute;
 var browserHistory = require('react-router').browserHistory;
+var Link = require('react-router').Link;
 
 var ProfileList = require('./ProfileList');
 var RunList = require('./RunList');
@@ -31,6 +32,7 @@ var Index = React.createClass({
                 <div className="col-md-6">
                     <h3>Profiles</h3>
                     <ProfileList />
+                    <Link to="/profiles/create"><button className="btn btn-success">Create profile</button></Link>
                 </div>
                 <div className="col-md-6">
                     <h3>Runs</h3>

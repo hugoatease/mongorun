@@ -23,7 +23,7 @@ var RunCreate = React.createClass({
 
     render: function() {
         return (
-            <form onClick={this.save}>
+            <form onSubmit={this.save}>
                 <div className="form-group">
                     <label for="duration">Duration</label>
                     <input type="text" className="form-control" id="duration" ref="duration" placeholder="Duration" />

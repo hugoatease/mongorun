@@ -24,7 +24,7 @@ var ProfileCreate = React.createClass({
 
     render: function() {
         return (
-            <form onClick={this.save}>
+            <form onSubmit={this.save}>
                 <div className="form-group">
                     <label for="first_name">First name</label>
                     <input type="text" className="form-control" id="first_name" ref="first_name" placeholder="First name" />
